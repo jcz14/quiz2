@@ -1,19 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <title>Quiz 2</title>
 	<meta charset="UTF-8">
   <link rel="stylesheet" href="./css/quiz2.css">
 </head>
 
-<body>
-	<h1>Welcome To The Wonderful World of Debugging Code</h1>
+<body onload="colorListItems()">
+  <section id="goodBye">
+    <h1>Bye~!</h1>
+  </section>
+
+	<h1 id="welcome">Welcome To The Wonderful World of Debugging Code</h1>
+
+  <a href="#" id="makeMeHappy">Make me happy!</a>
 
 	<section id="mainSection">
 		<p>This is a paragraph, I promise.</p>
 
 		<ul class="links">
 			<li>
-				<a>Link 1</a>
+				<a href="#">Link 1</a>
 			</li>
 			<li>
 				<a href="#">Link 2</a>
@@ -24,19 +31,36 @@
 		</ul>
   </section>
 
-	<p>I am a lonely paragraph, with no immediate parent.</p>
+	<p id="lonelyParagraph">I am a lonely paragraph, with no immediate parent.</p>
 
-	<section id=secondarySection>
+	<section id="secondarySection">
 		<p>Woop woop!!!</p>
 		<p>See how elegantly we're spaced out?</p>
 		<p>Yeah, we're spaced out alright.</p>
 		
-		<ol>
-			<li>I'm like an unordered list</li>	
-			<li>But I'm more orderly<li>
-			<li>That was a really bad joke.</li>
+		<ol id="list">
+			<li class="listItem">I'm like an unordered list</li>
+			<li class="listItem">But I'm more orderly<li>
+			<li class="listItem">That was a really bad joke.</li>
 		</ol>
 	</section>
+
+  <section id="accordion">
+    <form>
+      <input type="button" id="accordionButton" value="Click me!">
+    </form>
+    <section id="accordionContent">
+      <p>This is a long section that can be shown and hidden by the button you just clicked!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Click the button again to hide this text.</p>
+    </section>
+  </section>
+
+  <section id="endButton">
+    <form>
+      <input type="button" id="goodByeButton" value="That's all, folks!">
+    </form>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="./js/quiz2.js"></script>
